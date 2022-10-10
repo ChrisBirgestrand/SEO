@@ -9,15 +9,17 @@
     <meta property="twitter:description" content="Quickly check your WoW gold balance and make withdraws in an instant">
     <link rel="stylesheet" href="styles\index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/53e49ec59b.js" crossorigin="anonymous"></script>
     <title>SEO</title>
 </head>
 <body>
 
     <nav class="nav">
-        <ul>
+        <ul class="ul1">
             <li class="bank"><a href="#">Bank</a></li>
             <div class="dropdown">
                 <span class="withdraw">Withdraw</span>
+                <!--Can't align the dropdown menu with withdraw button-->
                     <div class="dropdown-content">
                         <li><a href="#">Horde</a></li>
                         <li><a href="#">Alliance</a></li>
@@ -25,12 +27,26 @@
             </div>
             <li class="deposit"><a href="#">Deposit</a></li>
         </ul>
-
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-
     </nav>
+
+    <input type="checkbox" id="hamburger-input" class="burger-shower" />
+
+    <label id="hamburger-menu" for="hamburger-input">
+        <img src="img\bars-solid.svg" alt="burger">
+        <nav id="sidebar-menu">
+            <h3>Bank</h3>
+            <ul class="hamul">
+                <li><a href="#">Horde</a></li>
+                <li><a href="#">Alliance</a></li>
+                <li><a href="#">Withdraw</a></li>
+            </ul>
+        </nav>
+    </label>
+
+    <div class="overlay"></div>
+
+
+
 
     <Main class="top">
         <h1 class="h1">World of Warcraft bank</h1>
