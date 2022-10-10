@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quickly check your WoW gold balance and make withdraws in an instant">
+    <meta property="og:description" content="Quickly check your WoW gold balance and make withdraws in an instant">
+    <meta property="twitter:description" content="Quickly check your WoW gold balance and make withdraws in an instant">
     <link rel="stylesheet" href="styles\index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SEO</title>
 </head>
 <body>
+
+    <nav class="nav">
+        <ul>
+            <li class="bank"><a href="#">Bank</a></li>
+            <div class="dropdown">
+                <span class="withdraw">Withdraw</span>
+                    <div class="dropdown-content">
+                        <li><a href="#">Horde</a></li>
+                        <li><a href="#">Alliance</a></li>
+                    </div>
+            </div>
+            <li class="deposit"><a href="#">Deposit</a></li>
+        </ul>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+
+    </nav>
+
     <Main class="top">
         <h1 class="h1">World of Warcraft bank</h1>
     </Main>
@@ -34,9 +58,11 @@
     <section class="link">
         <div class="bnet-container">
             <a class="bnet" href="#">Return to Battle.net</a>
+            <p class="question">Do you have any questions or need assistance?</p><br>
+            <a class="help" href="#">Contact customer support</a>
         </div>
     </section>
-
+    
     
 </body>
 </html>

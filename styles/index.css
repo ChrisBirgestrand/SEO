@@ -1,14 +1,57 @@
 body {
     background-image: url(../img/pexels-dapo-abideen-5677459.jpg);
-    background-color: rgb(18, 18, 119);
 }
 
-@media screen and (min-width 320px) {
-    body {
-        background-image: url(../img/iphone.jpg);
-    }
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(5, 5, 121);
+    opacity: 80%;
 }
 
+ul {
+    width: 100vh;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    width: 100px;
+    height: 50px;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    opacity: 100%;
+}
+
+
+.dropdown {
+    width: 100px;
+    height: 50px;
+    font-size: 42px;
+    margin: 30px;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    min-width: 100px;
+    background-color: rgb(5, 5, 121);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.withdraw {
+    display: flex;
+    justify-content: center;
+}
 
 .top {
     height: 300px;
@@ -23,7 +66,7 @@ body {
 }
 
 .card {
-    height: 600px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,11 +81,13 @@ body {
     display: grid;
     grid-template-columns: 25px 50px 50px 75px 100px 125px 50px 25px;
     grid-template-rows: 80px 30px 30px 30px 30px 30px 30px 30px 30px;
+    opacity: 80%;
 }
 
 .card1:hover {
     border: 2px solid;
     border-color: white;
+    opacity: 100%;
 }
 
 .alliance {
@@ -86,11 +131,13 @@ body {
     display: grid;
     grid-template-columns: 25px 50px 50px 75px 100px 125px 50px 25px;
     grid-template-rows: 80px 30px 30px 30px 30px 30px 30px 30px 30px;
+    opacity: 80%;
 }
 
 .card2:hover {
     border: 2px solid;
     border-color: white;
+    opacity: 100%;
 }
 
 .horde {
@@ -160,13 +207,125 @@ body {
 }
 
 .bnet-container {
-    display: flex;
-    justify-content: start;
-    width: 1000px;
+    width: 1050px;
     height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 300px 50px;
+    grid-template-rows: 10px 20px 20px 20px 20px 20px;
 }
 
 .bnet {
     font-size: 30px;
     color: dodgerblue;
+}
+
+.question {
+    font-size: 15px;
+    grid-column: 3 / 4;
+}
+
+.help {
+    width: 300px;
+    height: 20px;
+    font-size: 25px;
+    grid-column-end: 4;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: end;
+    color: dodgerblue;
+}
+
+a:link {text-decoration: none;}
+a:visited { text-decoration: none;}
+a:hover { text-decoration: none;}
+a:active { text-decoration: none; }
+
+@media screen and (max-width: 500px){
+    .nav {
+        width: 350px;
+        display: flex;
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .dropdown, .deposit, .withdraw {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    ul {
+        display: flex;
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .card {
+        width: 350px;
+        height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .card1, .card2 {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .alliance, .horde {
+        grid-column: 4 / 5;
+    }
+
+    .c1, .c3 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .g1 {
+        grid-column: 5 / 6;
+    }
+
+    .c2, .c4 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .g2 {
+        grid-column: 5 / 6;
+    }
+
+    .button1, .button2 {
+        width: 200px;
+        grid-column: 3 / 5;
+    }
+
+    .link {
+        height: 200px;
+    }
+
+    .bnet-container {
+        width: 350px;
+        height: 100px;
+    }
+
+    .bnet, .question, .help {
+        font-size: 15px;
+    }
+
+    .question {
+        width: 300px;
+        height: 25px;
+        display: inline-block;
+        grid-row-start: 3;
+    }
+
+    .help {
+        grid-row: 5 / 6;
+    }
 }
